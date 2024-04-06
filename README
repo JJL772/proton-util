@@ -1,0 +1,15 @@
+
+Installs proton & protonX to a prefix. It's a simple shell script to run Proton outside of Steam.
+
+Examples:
+ Run cmd.exe with Proton Experimental:
+   proton cmd.exe
+ Run cmd.exe with Proton 8:
+   proton8 cmd.exe
+
+
+Install with:
+
+make install PREFIX=/my/prefix
+
+Default PREFIX is ~/.local
