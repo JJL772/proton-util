@@ -8,7 +8,7 @@ function get_steam_dirs {
 function find_proton {
 	for d in `get_steam_dirs`; do
 		DIR="$d/steamapps/common/$1"
-		if stat "$DIR" > /dev/null; then
+		if [ -d "$DIR" ]; then
 			echo "$DIR"
 			return 0
 		fi
